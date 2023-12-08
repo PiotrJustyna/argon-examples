@@ -4,4 +4,6 @@ Render markdown-embedded mermaid into pdf and html using pandoc.
 
 ## how to
 
-`./start.sh`
+* `./start.sh`
+* `./render-documents.sh`
+* `exit`
