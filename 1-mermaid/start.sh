@@ -12,4 +12,4 @@ docker run \
   -v "$HOST_WORKING_DIRECTORY:$CODE_DIRECTORY" \
   -v "$CERTIFICATE_DIRECTORY:$HOME_DIRECTORY/.ssh:ro" \
   -w "$WORKING_DIRECTORY" \
-  --rm "piotrjustyna/argon:1.2" "./entrypoint.sh" "$WORKING_DIRECTORY"
+  --rm "piotrjustyna/argon:latest" "./entrypoint.sh" "$WORKING_DIRECTORY"
