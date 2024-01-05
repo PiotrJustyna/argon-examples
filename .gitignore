@@ -1,4 +1,5 @@
 mermaid-filter.err
-bin/*
-obj/*
-rendered-documents
+*bin/
+*obj/
+*rendered-documents
+.DS_Store
