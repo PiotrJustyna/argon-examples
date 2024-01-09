@@ -1,0 +1,16 @@
+FROM piotrjustyna/argon:latest as argon-vanilla
+
+RUN apk del \
+  pandoc \
+  npm \
+  chromium \
+  texlive \
+  curl
+
+FROM alpine:3.19.0 as argon-light
+
+COPY --from=argon-vanilla / /
+
+WORKDIR "/tmp/code"
+
+CMD [ "/bin/zsh" ]
